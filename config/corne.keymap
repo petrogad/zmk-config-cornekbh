@@ -201,10 +201,10 @@
             // | GUI | CTRL | SHFT | LWR | SPC |   | ENT | RSE  | BKSP | ALT | ESC |
 
             bindings = <
-&trans      &kp N1     &kp N2            &kp N3        &kp N4           &kp N5           &kp N6            &kp N7             &kp N8            &kp N9             &kp N0  &trans
-&caps_word  &trans     &kp LEFT_CONTROL  &kp UP_ARROW  &browsertab      &kp PAGE_UP      &kp K_PLAY_PAUSE  &kp LG(BACKSPACE)  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans  &mt LC(SPACE) LC(SPACE)
-&trans      &kp LCTRL  &kp LEFT          &kp DOWN      &kp RIGHT_ARROW  &kp PAGE_DOWN    &kp QUESTION      &kp N1             &kp N2            &kp N3             &trans  &mt LC(SPACE) LC(SPACE)
-                                         &kp LGUI      &trans           &kp SPACE        &kp RET           &mo 3              &trans
+&trans                                         &kp N1     &kp N2            &kp N3        &kp N4           &kp N5           &kp N6            &kp N7  &kp N8            &kp N9             &kp N0  &kp LG(BACKSPACE)
+&caps_word                                     &trans     &kp LEFT_CONTROL  &kp UP_ARROW  &browsertab      &kp PAGE_UP      &kp K_PLAY_PAUSE  &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans  &mt LC(SPACE) LC(SPACE)
+&mt LG(LC(LS(NUMBER_4))) LS(LC(LG(NUMBER_4)))  &kp LCTRL  &kp LEFT          &kp DOWN      &kp RIGHT_ARROW  &kp PAGE_DOWN    &kp QUESTION      &kp N1  &kp N2            &kp N3             &trans  &mt LC(SPACE) LC(SPACE)
+                                                                            &kp LGUI      &trans           &kp SPACE        &kp RET           &mo 3   &trans
             >;
         };
 
