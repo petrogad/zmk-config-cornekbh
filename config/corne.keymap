@@ -201,10 +201,10 @@
             // | GUI | CTRL | SHFT | LWR | SPC |   | ENT | RSE  | BKSP | ALT | ESC |
 
             bindings = <
-&trans      &kp N1     &kp N2    &kp N3        &kp N4           &kp N5           &kp N6  &kp N7           &kp N8        &kp N9        &kp N0  &kp LA(BACKSPACE)
-&caps_word  &trans     &trans    &kp UP_ARROW  &browsertab      &kp PAGE_UP      &trans  &kp NUMBER_4     &kp NUMBER_5  &kp NUMBER_6  &trans  &mt LC(SPACE) LC(SPACE)
-&trans      &kp LCTRL  &kp LEFT  &kp DOWN      &kp RIGHT_ARROW  &kp PAGE_DOWN    &trans  &kp N1           &kp N2        &kp N3        &trans  &mt LC(SPACE) LC(SPACE)
-                                 &kp LGUI      &kp LEFT_SHIFT   &trans           &mo 3   &kp KP_NUMBER_0  &trans
+&trans      &kp N1     &kp N2    &kp N3        &kp N4           &kp N5           &kp N6      &kp N7           &kp N8        &kp N9        &kp N0  &kp LA(BACKSPACE)
+&caps_word  &trans     &trans    &kp UP_ARROW  &browsertab      &kp PAGE_UP      &trans      &kp NUMBER_4     &kp NUMBER_5  &kp NUMBER_6  &trans  &mt LC(SPACE) LC(SPACE)
+&trans      &kp LCTRL  &kp LEFT  &kp DOWN      &kp RIGHT_ARROW  &kp PAGE_DOWN    &kp PERIOD  &kp N1           &kp N2        &kp N3        &trans  &mt LC(SPACE) LC(SPACE)
+                                 &kp LGUI      &kp LEFT_SHIFT   &trans           &mo 3       &kp KP_NUMBER_0  &trans
             >;
         };
 
@@ -230,7 +230,7 @@
             bindings = <
 &trans  &kp F1        &kp F2        &kp F3  &kp F4     &kp F5                                     &kp F6       &kp F7    &kp F8        &kp F9        &kp F10  &trans
 &trans  &bt BT_SEL 0  &bt BT_SEL 1  &trans  &kp LC(V)  &mt LG(LC(LS(N4))) LG(LC(LS(NUMBER_4)))    &browsertab  &kp C_PP  &kp C_VOL_DN  &kp C_VOL_UP  &trans   &trans
-&trans  &trans        &trans        &trans  &trans     &trans                                     &trans       &trans    &trans        &trans        &trans   &trans
+&trans  &trans        &trans        &trans  &trans     &trans                                     &trans       &trans    &trans        &trans        &trans   &studio_unlock
                                     &trans  &trans     &trans                                     &trans       &trans    &trans
             >;
         };
