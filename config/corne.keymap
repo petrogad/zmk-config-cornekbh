@@ -107,7 +107,7 @@
                 <&macro_release>,
                 <&kp LCTRL>,
                 <&macro_tap>,
-                <&kp S>;
+                <&kp T>;
 
             label = "NEW_PANE";
         };
@@ -142,6 +142,22 @@
                 <&kp DOLLAR>;
 
             label = "TMUX_RENAME_SESSION";
+        };
+
+        tmux_split_right: tmux_split_right {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_CONTROL>,
+                <&macro_tap>,
+                <&kp SPACE>,
+                <&macro_release>,
+                <&kp LCTRL>,
+                <&macro_tap>,
+                <&kp V>;
+
+            label = "TMUX_SPLIT_RIGHT";
         };
     };
 
@@ -308,10 +324,10 @@
         ADJ {
             display-name = "System";
             bindings = <
-&trans  &kp F1                &kp F2        &kp F3                &kp F4     &kp F5                                     &kp F6          &kp F7    &kp F8                 &kp F9        &kp F10  &trans
-&trans  &bt BT_SEL 0          &bt BT_SEL 1  &trans                &kp LC(V)  &mt LG(LC(LS(N4))) LG(LC(LS(NUMBER_4)))    &browsertab     &kp C_PP  &kp C_VOL_DN           &kp C_VOL_UP  &trans   &trans
-&trans  &tmux_rename_session  &trans        &tmux_toggle_sidebar  &trans     &tmux_new_session                          &tmux_new_pane  &trans    &tmux_cursor_side_bar  &trans        &trans   &studio_unlock
-                                            &trans                &trans     &trans                                     &trans          &trans    &trans
+&trans  &kp F1                &kp F2        &kp F3                &kp F4     &kp F5                                     &kp F6          &kp F7             &kp F8                 &kp F9        &kp F10  &trans
+&trans  &bt BT_SEL 0          &bt BT_SEL 1  &trans                &kp LC(V)  &mt LG(LC(LS(N4))) LG(LC(LS(NUMBER_4)))    &browsertab     &kp C_PP           &kp C_VOL_DN           &kp C_VOL_UP  &trans   &trans
+&trans  &tmux_rename_session  &trans        &tmux_toggle_sidebar  &trans     &tmux_new_session                          &tmux_new_pane  &tmux_split_right  &tmux_cursor_side_bar  &trans        &trans   &studio_unlock
+                                            &trans                &trans     &trans                                     &trans          &trans             &trans
             >;
         };
 
